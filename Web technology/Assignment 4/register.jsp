@@ -1,10 +1,3 @@
-<%-- 
-    Document   : register
-    Created on : 02-Jun-2021, 9:36:09 am
-    Author     : DU0096TU
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
