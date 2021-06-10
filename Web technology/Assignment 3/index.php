@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
+<?php
+$user = $_POST['fname'];
+$pass  = $_POST['pwd'];
+if($user=="admin" && $pass=="nopass")
+{
+    echo "welcome Admin";
 }
-</script>
-</head>
-<body background="background.JPG">
-<center>
-<form name="myForm" action="/login.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="fname">
-  Password: <input type="password" name="pwd">
-  <input type="submit" value="Submit">
-</form>
-</center>
-</body>
+else
+{
+    echo "Wrong user id or password";
+}
